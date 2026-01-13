@@ -49,6 +49,16 @@ public class __BS22__KthElementTwoSortedArrays {
         // Always binary search on smaller array
         if (m > n) return kthElement(nums2, nums1, k);
 
+        /** Theory
+         * we know i (mid) will be in between 0 <= i <= m;
+         * & we know j means k - i & j will be always 0 <= j <= n;
+         * just use k - i instead of j,
+         * so, 0 <= k - i <= n
+         * k -i >= 0 , so i <= k and, k - i <= n, so i >= k;
+         * so k - n <= i <= k,
+         * combining with 0 <= i <= m
+         * max(0, k -n) <= i <= max(k , m)
+         */
         int left = Math.max(0, k - n);
         int right = Math.min(k, m);
 
