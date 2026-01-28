@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class DequeInterfaceDemo {
     public static void main(String[] args) {
-        // if we want deque to be queue better to go with LinkedList, and for stack go with ArrayDeque;
+        // if we want deque to be queue better to go with linkedlist, and for stack go with ArrayDeque;
         Deque<Integer> deque = new LinkedList<>();
 
         deque.offerFirst(1);
