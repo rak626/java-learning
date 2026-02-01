@@ -1,5 +1,6 @@
 package DSA.stack;
 
+import java.util.ArrayDeque;
 import java.util.Stack;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Stack;
  * Time: O(n)
  * Space: O(n)
  */
-public class ValidParentheses {
+public class __SQ2__ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> st = new Stack<>();
         for (Character c : s.toCharArray()) {
@@ -32,5 +33,23 @@ public class ValidParentheses {
             }
         }
         return st.isEmpty();
+    }
+
+    /**
+     * cleanest approach
+     */
+    public boolean isValid2(String s) {
+        var stack = new ArrayDeque<Character>();
+
+        for (char c : s.toCharArray()) {
+            if (c == '(') stack.push(')');
+            else if (c == '{') stack.push('}');
+            else if (c == '[') stack.push(']');
+            else {
+                if (stack.isEmpty() || stack.pop() != c) return false;
+            }
+        }
+
+        return stack.isEmpty();
     }
 }

@@ -14,18 +14,20 @@ import java.util.Stack;
  * Time: O()
  * Space: O()
  */
-public class PreviousSmallestElement {
-    public int[] previousSmallestElement(int[] nums) {
+public class __SQ7__PreviousSmallerElement {
+    public static int[] previousSmallerElement(int[] nums) {
         int n = nums.length;
         Stack<Integer> stack = new Stack<>();
         int[] result = new int[n];
+
         for (int i = 0; i < n; i++) {
-            while (!stack.isEmpty() && stack.peek() >= nums[i]) {
+            while (!stack.isEmpty() && nums[i] < nums[stack.peek()]) {
                 stack.pop();
             }
             result[i] = stack.isEmpty() ? -1 : stack.peek();
-            stack.push(nums[i]);
+            stack.push(i);
         }
+
         return result;
     }
 }

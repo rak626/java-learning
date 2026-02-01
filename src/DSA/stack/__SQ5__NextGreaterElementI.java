@@ -17,7 +17,7 @@ import java.util.Stack;
  * Time: O(2N) N for 'outside for' loop, N for 'inside while' loop
  * Space: O(N) worst case if all are in increasing order
  */
-public class NextGreaterElementI {
+public class __SQ5__NextGreaterElementI {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new HashMap<>();
         Stack<Integer> stack = new Stack<>();
@@ -27,11 +27,7 @@ public class NextGreaterElementI {
             while (!stack.isEmpty() && stack.peek() <= nums2[i]) {
                 stack.pop();
             }
-            if (stack.isEmpty()) {
-                map.put(nums2[i], -1);
-            } else {
-                map.put(nums2[i], stack.peek());
-            }
+            map.put(nums2[i], stack.isEmpty() ? -1 : stack.peek());
             stack.push(nums2[i]);
         }
         int[] ans = new int[nums1.length];

@@ -14,7 +14,7 @@ import java.util.Stack;
  * Time: O()
  * Space: O()
  */
-public class NextGreaterElementIi {
+public class __SQ5__NextGreaterElementIi {
     public int[] nextGreaterElements(int[] nums) {
         int[] result = new int[nums.length];
         int n = nums.length;
