@@ -15,7 +15,7 @@ import java.util.Deque;
  * Time: O()
  * Space: O()
  */
-public class AsteroidCollision {
+public class __SQ11__AsteroidCollision {
     public int[] asteroidCollision(int[] asteroids) {
         Deque<Integer> stack = new ArrayDeque<>();
 
