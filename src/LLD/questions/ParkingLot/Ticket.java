@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class Ticket {
-    private String ticketNo;
-    private Slot slot;
-    private LocalDateTime parkedTime;
+    private final String ticketNo;
+    private final Slot slot;
+    private final LocalDateTime parkedTime;
 
     public Ticket(Slot slot) {
         this.slot = slot;
@@ -27,23 +27,11 @@ public class Ticket {
         return slot;
     }
 
-    public void setSlot(Slot slot) {
-        this.slot = slot;
-    }
-
     public LocalDateTime getParkedTime() {
         return parkedTime;
     }
 
-    public void setParkedTime(LocalDateTime parkedTime) {
-        this.parkedTime = parkedTime;
-    }
-
     public String getTicketNo() {
         return ticketNo;
-    }
-
-    public void setTicketNo(String ticketNo) {
-        this.ticketNo = ticketNo;
     }
 }

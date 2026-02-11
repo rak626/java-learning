@@ -49,7 +49,7 @@ public class __BS22__KthElementTwoSortedArrays {
         // Always binary search on smaller array
         if (m > n) return kthElement(nums2, nums1, k);
 
-        /** Theory
+        /* Theory
          * we know i (mid) will be in between 0 <= i <= m;
          * & we know j means k - i & j will be always 0 <= j <= n;
          * just use k - i instead of j,

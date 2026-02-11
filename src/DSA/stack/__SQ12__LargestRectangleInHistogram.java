@@ -108,7 +108,6 @@ public class __SQ12__LargestRectangleInHistogram {
             while (!st.isEmpty() && heights[st.peek()] > curHeight) {
                 int height = heights[st.pop()];
                 int leftBoundary = st.isEmpty() ? -1 : st.peek();
-
                 int width = i - leftBoundary - 1;
                 maxArea = Math.max(maxArea, height * width);
             }
