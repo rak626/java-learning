@@ -21,16 +21,16 @@ import java.util.Map;
 public class __LL19__LRUCache {
     class LRUCache<K, V> {
 
-        private final Map<K, DoublyListNode<K, V>> map;
-        private final DoublyListNode<K, V> head;
-        private final DoublyListNode<K, V> tail;
+        private final Map<K, LRUNode<K, V>> map;
+        private final LRUNode<K, V> head;
+        private final LRUNode<K, V> tail;
         private final int capacity;
 
         public LRUCache(int capacity) {
             this.capacity = capacity;
 
-            head = new DoublyListNode<>(null, null);
-            tail = new DoublyListNode<>(null, null);
+            head = new LRUNode<>(null, null);
+            tail = new LRUNode<>(null, null);
 
             head.next = tail;
             tail.prev = head;
@@ -39,7 +39,7 @@ public class __LL19__LRUCache {
         }
 
         public V get(K key) {
-            DoublyListNode<K, V> node = map.get(key);
+            LRUNode<K, V> node = map.get(key);
 
             if (node == null) return null;
 
@@ -53,7 +53,7 @@ public class __LL19__LRUCache {
 
             if (capacity == 0) return;
 
-            DoublyListNode<K, V> node = map.get(key);
+            LRUNode<K, V> node = map.get(key);
 
             if (node != null) {
                 node.val = value;
@@ -63,22 +63,22 @@ public class __LL19__LRUCache {
             }
 
             if (map.size() == capacity) {
-                DoublyListNode<K, V> lru = tail.prev;
+                LRUNode<K, V> lru = tail.prev;
                 deleteNode(lru);
                 map.remove(lru.key);
             }
 
-            DoublyListNode<K, V> newNode = new DoublyListNode<>(key, value);
+            LRUNode<K, V> newNode = new LRUNode<>(key, value);
             map.put(key, newNode);
             addAfterHead(newNode);
         }
 
-        private void deleteNode(DoublyListNode<K, V> node) {
+        private void deleteNode(LRUNode<K, V> node) {
             node.prev.next = node.next;
             node.next.prev = node.prev;
         }
 
-        private void addAfterHead(DoublyListNode<K, V> node) {
+        private void addAfterHead(LRUNode<K, V> node) {
             node.next = head.next;
             node.prev = head;
             head.next.prev = node;
