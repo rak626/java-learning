@@ -31,10 +31,7 @@ public class __RC2__CombinationSum {
             result.add(new ArrayList<>(subArray));
             return;
         }
-        if (target < 0) {
-            return;
-        }
-        if (idx == candidates.length) {
+        if (target < 0 || idx == candidates.length) {
             return;
         }
         // take & move on
@@ -45,6 +42,5 @@ public class __RC2__CombinationSum {
         }
         // not take
         solve(idx + 1, target, candidates, subArray, result);
-
     }
 }
