@@ -1,10 +1,11 @@
-package LLD.behavioural.ObserverPattern.ComplexExample;
+package LLD.behavioural.Observer;
 
-import LLD.behavioural.ObserverPattern.ComplexExample.Observable.WeatherStation;
-import LLD.behavioural.ObserverPattern.ComplexExample.Observer.LCDDisplay;
-import LLD.behavioural.ObserverPattern.ComplexExample.Observer.PhoneDisplay;
+import LLD.behavioural.Observer.Observable.WeatherStation;
+import LLD.behavioural.Observer.Observer.LCDDisplay;
+import LLD.behavioural.Observer.Observer.PhoneDisplay;
 
-public class Main {
+// https://www.geeksforgeeks.org/system-design/observer-pattern-set-1-introduction/
+public class WeatherApp {
     public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation();
 

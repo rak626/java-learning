@@ -1,6 +1,6 @@
-package LLD.behavioural.ObserverPattern.ComplexExample.Observer;
+package LLD.behavioural.Observer.Observer;
 
-import LLD.behavioural.ObserverPattern.ComplexExample.Observable.Subject;
+import LLD.behavioural.Observer.Observable.Subject;
 
 public class LCDDisplay implements Observer {
     private float temperature;

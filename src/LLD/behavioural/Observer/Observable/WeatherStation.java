@@ -1,12 +1,12 @@
-package LLD.behavioural.ObserverPattern.ComplexExample.Observable;
+package LLD.behavioural.Observer.Observable;
 
-import LLD.behavioural.ObserverPattern.ComplexExample.Observer.Observer;
+import LLD.behavioural.Observer.Observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherStation implements Subject {
-    private List<Observer> observers;
+    private final List<Observer> observers;
     private float temperature;
     private float humidity;
     private float pressure;

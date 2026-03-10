@@ -65,9 +65,7 @@ client code only does:
 
 ```java
 PaymentStrategy strategy = getPaymentStrategyFromUserInput(); // returns CreditCardPayment or UpiPayment etc.
-strategy.
-
-pay(1000);
+strategy.pay(1000);
 ```
 
 ✅ No huge if-else

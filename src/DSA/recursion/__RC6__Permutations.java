@@ -17,7 +17,7 @@ import java.util.List;
  * Time: O()
  * Space: O()
  */
-public class Permutations {
+public class __RC6__Permutations {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         findPermute(0, nums, ans);

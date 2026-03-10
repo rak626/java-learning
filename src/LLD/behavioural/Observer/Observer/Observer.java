@@ -1,4 +1,4 @@
-package LLD.behavioural.ObserverPattern.ComplexExample.Observer;
+package LLD.behavioural.Observer.Observer;
 
 public interface Observer {
     void update(float temperature, float humidity, float pressure);
