@@ -15,7 +15,7 @@ import java.util.Deque;
  * Time: O()
  * Space: O()
  */
-public class SimplifyPath {
+public class __SQ18__SimplifyPath {
     public String simplifyPath(String path) {
         String[] words = path.split("/");
         Deque<String> st = new ArrayDeque<>();

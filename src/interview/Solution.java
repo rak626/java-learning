@@ -1,85 +1,47 @@
 package interview;
 
-import DSA.utils.TreeNode;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+class Solution {
+    public int minCost(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> freq1 = new HashMap<>();
 
-public class Solution {
-    /**
-     * arr[] = [2,2,5,5] -> 9
-     *
-     * flg = false;
-     * int startidx, endindx,
-     * for i = 0 -> n -1
-     *      for j = i, n-1
-     *          sum += a[j]
-     *          if sum > target
-     *              break;
-     *           if sum == target
-     *              startind = i
-     *              endind = j
-     *              flg = true;
-     *              break;
-     *      if flg == true
-     *          break;
-     *
-     *  t.c -> O(N^2)
-     *  s.c -> O(1)
-     *
-     *  i -> 0th,
-     *  j -> 0th,
-     *  j increase till sum > target
-     *  i -> i + 1,
-     *
-     */
-
-    private static List<Integer> findSubarray(int[] arr, int target) {
-        int left = 0, right = 0, n = arr.length;
-        int sum = 0;
-        while (right < n) {
-            sum += arr[right];
-            if (sum > target) {
-                while (sum > target && left < right) {
-                    sum -= arr[left];
-                    left++;
-                }
-            }
-            if (sum == target) {
-                break;
-            }
-            right++;
+        // Count frequencies in nums1
+        for (int x : nums1) {
+            freq1.put(x, freq1.getOrDefault(x, 0) + 1);
+            freq.put(x, freq.getOrDefault(x, 0) + 1);
         }
-        List<Integer> result = new ArrayList<>();
-        for (int i = left; i <= right; i++) {
-            result.add(arr[i]);
+
+        // Count frequencies in nums2 and update freq
+        for (int x : nums2) {
+            freq.put(x, freq.getOrDefault(x, 0) + 1);
         }
-        return result;
+
+        long diff = 0;
+        long ans = 0;
+
+        for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
+            int key = entry.getKey();
+            int totalFreq = entry.getValue();
+
+            if (totalFreq % 2 != 0) return -1;
+
+            // Each array must eventually have totalFreq / 2 occurrences
+            int targetFreq = totalFreq / 2;
+            int currentFreqIn1 = freq1.getOrDefault(key, 0);
+
+            if (currentFreqIn1 == targetFreq) continue;
+
+            diff += (currentFreqIn1 - targetFreq);
+            ans += Math.abs(currentFreqIn1 - targetFreq);
+        }
+
+        // In a valid swap scenario, the net difference should be zero
+        if (diff == 0) {
+            return (int) (ans / 2);
+        }
+
+        return -1;
     }
-
-    public static void main(String[] args) {
-        int[] arr = {9, 4, 20, 5, 10, 5};
-        int k = 35;
-        List<Integer> subarray = Solution.findSubarray(arr, k);
-//        System.out.println(subarray);
-        Solution.Sample();
-    }
-
-    private static int maximumWidthOfBinaryTree(TreeNode node) {
-        return 0;
-    }
-
-    private static void Sample() {
-        List<List<String>> mainList = Arrays.asList(
-                Arrays.asList("abc", "ab"),
-                Arrays.asList("jab", "jj", "hh"),
-                Arrays.asList("amo", "mo", "ef")
-        );
-
-        List<String> result = mainList.stream().flatMap(e -> e.stream().filter(f -> f.startsWith("a"))).collect(Collectors.toList());
-        System.out.println(result);
-    }
-
 }

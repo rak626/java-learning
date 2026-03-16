@@ -44,10 +44,6 @@ public class __DP3__FrogJump {
 
     /**
      * Pure recursive solution (exponential time).
-     *
-     * @param i      Current stone index
-     * @param height Array of stone heights
-     * @return Minimum energy to reach stone i
      */
     private int frogJumpRecursive(int i, int[] height) {
         if (i == 0) return 0;
@@ -61,12 +57,7 @@ public class __DP3__FrogJump {
 
     /**
      * Recursion + Memoization (top-down DP).
-     *
-     * @param i      Current stone index
-     * @param height Array of stone heights
-     * @param dp     Memoization array
-     * @return Minimum energy to reach stone i
-     *
+     * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(n)
      */
@@ -83,9 +74,6 @@ public class __DP3__FrogJump {
 
     /**
      * Iterative bottom-up DP (tabulation).
-     *
-     * @param height Array of stone heights
-     * @return Minimum energy to reach the last stone
      * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(n)
@@ -107,9 +95,6 @@ public class __DP3__FrogJump {
 
     /**
      * Space-optimized iterative DP.
-     *
-     * @param height Array of stone heights
-     * @return Minimum energy to reach the last stone
      * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(1)
