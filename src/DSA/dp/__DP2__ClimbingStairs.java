@@ -48,9 +48,6 @@ public class __DP2__ClimbingStairs {
 
     /**
      * Main method to compute the number of ways to climb stairs using memoization.
-     *
-     * @param n Total number of stairs
-     * @return Number of distinct ways to climb to the top
      */
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
@@ -64,9 +61,6 @@ public class __DP2__ClimbingStairs {
      * Idea: Directly implement the recurrence:
      * ways(n) = ways(n-1) + ways(n-2)
      * </p>
-     *
-     * @param ind Remaining steps to climb
-     * @return Number of ways to climb remaining steps
      */
     private int findWays(int ind) {
         if (ind == 0) return 1;  // Base case
@@ -82,11 +76,6 @@ public class __DP2__ClimbingStairs {
      * Idea: Store already computed results to avoid recomputation.
      * Each subproblem ways(k) is solved only once.
      * </p>
-     *
-     * @param ind Remaining steps to climb
-     * @param dp  Memoization array to store computed results
-     * @return Number of ways to climb remaining steps
-     * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(n)
      */
@@ -107,10 +96,6 @@ public class __DP2__ClimbingStairs {
      * Idea: Build solution from dp[0] up to dp[n] using the recurrence:
      * dp[i] = dp[i-1] + dp[i-2]
      * </p>
-     *
-     * @param n Total number of stairs
-     * @return Number of distinct ways to climb to the top
-     * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(n)
      */
@@ -134,10 +119,6 @@ public class __DP2__ClimbingStairs {
      * Idea: Only keep track of the last two values (Fibonacci pattern)
      * to reduce space complexity from O(n) to O(1).
      * </p>
-     *
-     * @param n Total number of stairs
-     * @return Number of distinct ways to climb to the top
-     * <p>
      * Time Complexity: O(n)
      * Space Complexity: O(1)
      */

@@ -43,11 +43,6 @@ public class __DP4__FrogJumpK {
 
     /**
      * Pure recursive solution.
-     *
-     * @param i      Current stone index
-     * @param height Array of stone heights
-     * @param k      Maximum jump length
-     * @return Minimum energy to reach stone i
      */
     private int frogJumpKRecursive(int i, int[] height, int k) {
         if (i == 0) return 0;
@@ -64,12 +59,6 @@ public class __DP4__FrogJumpK {
 
     /**
      * Recursion + Memoization (top-down DP).
-     *
-     * @param i      Current stone index
-     * @param height Array of stone heights
-     * @param k      Maximum jump length
-     * @param dp     Memoization array
-     * @return Minimum energy to reach stone i
      */
     private int frogJumpKMemo(int i, int[] height, int k, int[] dp) {
         if (i == 0) return 0;
@@ -87,10 +76,6 @@ public class __DP4__FrogJumpK {
 
     /**
      * Iterative bottom-up DP (tabulation).
-     *
-     * @param height Array of stone heights
-     * @param k      Maximum jump length
-     * @return Minimum energy to reach the last stone
      */
     private int frogJumpKIterative(int[] height, int k) {
         int n = height.length;
@@ -114,10 +99,6 @@ public class __DP4__FrogJumpK {
     /**
      * Space-optimized iterative DP.
      * Stores only last k dp values to save space.
-     *
-     * @param height Array of stone heights
-     * @param k      Maximum jump length
-     * @return Minimum energy to reach the last stone
      */
     private int frogJumpKSpaceOptimized(int[] height, int k) {
         int n = height.length;

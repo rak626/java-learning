@@ -43,10 +43,6 @@ public class __DP5__HouseRobber {
 
     /**
      * 1. Pure recursive solution (Exponential)
-     *
-     * @param nums Array of house values
-     * @param i    Current house index
-     * @return Maximum money that can be robbed till house i
      * <p>
      * Time Complexity: O(2^n) → Two choices per house, recursion tree doubles each step
      * Space Complexity: O(n) → Recursion stack depth
@@ -60,11 +56,6 @@ public class __DP5__HouseRobber {
 
     /**
      * 2. Recursion + Memoization (Top-down DP)
-     *
-     * @param nums Array of house values
-     * @param i    Current house index
-     * @param dp   Memoization array
-     * @return Maximum money that can be robbed till house i
      * <p>
      * Time Complexity: O(n) → Each house computed once
      * Space Complexity: O(n) → DP array + recursion stack
@@ -81,9 +72,6 @@ public class __DP5__HouseRobber {
 
     /**
      * 3. Iterative Bottom-up DP (Tabulation)
-     *
-     * @param nums Array of house values
-     * @return Maximum money that can be robbed
      * <p>
      * Time Complexity: O(n) → One pass through array
      * Space Complexity: O(n) → DP array
@@ -106,9 +94,6 @@ public class __DP5__HouseRobber {
 
     /**
      * 4. Space-Optimized DP
-     *
-     * @param nums Array of house values
-     * @return Maximum money that can be robbed
      * <p>
      * Time Complexity: O(n) → One pass through array
      * Space Complexity: O(1) → Only two variables used
