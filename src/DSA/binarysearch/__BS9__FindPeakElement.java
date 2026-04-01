@@ -11,7 +11,7 @@ package DSA.binarysearch;
  *
  * <p><b>Problem Summary:</b></p>
  * <p>
- * A peak element is one that is strictly greater than its neighbors.
+ * A peak element is __1__ that is strictly greater than its neighbors.
  * Given an array <code>nums</code>, return the index of any peak element.
  * You may assume <code>nums[-1] = nums[n] = -∞</code>.
  * </p>
@@ -20,7 +20,7 @@ package DSA.binarysearch;
  * <ul>
  *   <li>Check simple boundary cases:
  *     <ul>
- *       <li>If array has one element → return index 0.</li>
+ *       <li>If array has __1__ element → return index 0.</li>
  *       <li>If first element is greater than second → return index 0.</li>
  *       <li>If last element is greater than second last → return index n-1.</li>
  *     </ul>
@@ -32,7 +32,7 @@ package DSA.binarysearch;
  *       <li>Else, peak lies on the left side → move <code>h = mid - 1</code>.</li>
  *     </ul>
  *   </li>
- *   <li>Loop guarantees finding a peak since array has at least one.</li>
+ *   <li>Loop guarantees finding a peak since array has at least __1__.</li>
  * </ul>
  *
  * <h2>Complexity:</h2>

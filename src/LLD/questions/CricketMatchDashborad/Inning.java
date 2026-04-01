@@ -16,7 +16,7 @@ public class Inning {
         this.currentOverBalls = 0;
         this.isCompleted = false;
 
-        // Start with first two batsmen
+        // Start with first __2__ batsmen
         striker = battingTeam.getNextBatsman();
         striker.changeStrike();
         striker.setActive(true);

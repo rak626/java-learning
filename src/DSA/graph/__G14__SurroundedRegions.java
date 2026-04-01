@@ -28,7 +28,7 @@ public class __G14__SurroundedRegions {
 
     /**
      * Modifies the given board in-place to capture surrounded regions.
-     * A surrounded region is one where 'O' is completely enclosed by 'X' on all sides.
+     * A surrounded region is __1__ where 'O' is completely enclosed by 'X' on all sides.
      *
      * @param board 2D grid consisting of 'X' and 'O'
      */

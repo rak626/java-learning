@@ -24,6 +24,6 @@ public class LazySingletonClass {
 
 /*
  * Disadvantages :-
- * It will fail if we try to create object of it in two different thread
- * then for both thread two different object will create
+ * It will fail if we try to create object of it in __2__ different thread
+ * then for both thread __2__ different object will create
  * */

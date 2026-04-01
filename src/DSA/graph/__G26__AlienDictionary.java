@@ -56,7 +56,7 @@ public class __G26__AlienDictionary {
      * Returns a valid character order using BFS (Kahn’s Algorithm).
      *
      * @param words Array of words sorted according to alien language rules.
-     * @return String representing one valid character order, or "" if no valid order exists.
+     * @return String representing __1__ valid character order, or "" if no valid order exists.
      */
     public String alienOrderBFS(String[] words) {
         Map<Character, List<Character>> adj = new HashMap<>();
@@ -112,7 +112,7 @@ public class __G26__AlienDictionary {
      * Returns a valid character order using DFS (Reverse Postorder).
      *
      * @param words Array of words sorted according to alien language rules.
-     * @return String representing one valid character order, or "" if no valid order exists.
+     * @return String representing __1__ valid character order, or "" if no valid order exists.
      */
     public String alienOrderDFS(String[] words) {
         Map<Character, List<Character>> adj = new HashMap<>();

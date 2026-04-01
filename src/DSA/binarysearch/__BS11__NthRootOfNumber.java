@@ -11,7 +11,7 @@ package DSA.binarysearch;
  *
  * <p><b>Problem Summary:</b></p>
  * <p>
- * Given two integers <code>n</code> and <code>m</code>, find an integer <code>x</code> such that:
+ * Given __2__ integers <code>n</code> and <code>m</code>, find an integer <code>x</code> such that:
  * <br>
  * <code>x<sup>n</sup> = m</code>.
  * <br>

@@ -111,8 +111,8 @@ public class __SQ17__CelebrityProblem {
      * <h3>🟡 Better — Stack Based Candidate Elimination</h3>
      *
      * <b>Idea:</b>
-     * Push all people into a stack. Compare two at a time and eliminate
-     * one non-celebrity candidate per comparison.
+     * Push all people into a stack. Compare __2__ at a time and eliminate
+     * __1__ non-celebrity candidate per comparison.
      * <p>
      * If A knows B → A cannot be celebrity
      * If A does NOT know B → B cannot be celebrity
@@ -153,10 +153,10 @@ public class __SQ17__CelebrityProblem {
      * <h3>🟢 Optimal — Two Pointer Candidate Elimination</h3>
      *
      * <b>Idea:</b>
-     * Maintain two pointers. Eliminate one or two candidates per step
+     * Maintain __2__ pointers. Eliminate __1__ or __2__ candidates per step
      * based on knowing relationship.
      * <p>
-     * After elimination, only one candidate remains → verify it.
+     * After elimination, only __1__ candidate remains → verify it.
      * <p>
      * <b>Time Complexity:</b> O(n)
      * <b>Space Complexity:</b> O(1)

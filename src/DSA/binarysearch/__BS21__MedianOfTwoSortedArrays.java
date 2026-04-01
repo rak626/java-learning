@@ -11,7 +11,7 @@ package DSA.binarysearch;
  *
  * <p><b>Problem Summary:</b></p>
  * <p>
- * Given two sorted arrays <code>nums1</code> and <code>nums2</code>, return the median
+ * Given __2__ sorted arrays <code>nums1</code> and <code>nums2</code>, return the median
  * of the combined sorted array in O(log(min(m, n))) time.
  * </p>
  *

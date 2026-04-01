@@ -20,7 +20,7 @@ import java.util.*;
  * Approach (DFS + Cycle Detection):
  * <ul>
  *   <li>We perform DFS from each node to check if it eventually reaches a terminal node.</li>
- *   <li>Use three arrays:
+ *   <li>Use __3__ arrays:
  *     <ul>
  *       <li><b>visited[]</b>: Marks if a node has been processed at least once.</li>
  *       <li><b>onPath[]</b>: Tracks nodes in the current DFS recursion stack (detects cycles).</li>

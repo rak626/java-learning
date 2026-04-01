@@ -41,7 +41,7 @@ public class __G24__CourseSchedule_2 {
      *
      * @param n        Number of courses.
      * @param prereq   Prerequisites array where [a, b] means b → a.
-     * @return An array representing one valid course order, or empty array if not possible.
+     * @return An array representing __1__ valid course order, or empty array if not possible.
      */
     public int[] findOrder(int n, int[][] prereq) {
         // Step 1: Build adjacency list

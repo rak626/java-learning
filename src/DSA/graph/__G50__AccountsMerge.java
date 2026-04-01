@@ -15,7 +15,7 @@ import java.util.*;
  * Approach:
  * - Use Disjoint Set Union (DSU) to merge accounts sharing emails.
  * - Iterate through each account:
- *     - For each email, if it's seen before, union the current account index with the existing one.
+ *     - For each email, if it's seen before, union the current account index with the existing __1__.
  *     - Otherwise, map the email to the current account index.
  * - After union operations, the parent of each account represents a merged group.
  * - Group emails by their parent, sort them, and prepend the username.
@@ -31,7 +31,7 @@ import java.util.*;
  * Notes:
  * - Mapping emails to account index is the key trick to efficiently detect overlaps.
  * - DSU helps in merging connected components without explicitly building a graph.
- * - Keep in mind: each email belongs to only one user; final result emails must be sorted.
+ * - Keep in mind: each email belongs to only __1__ user; final result emails must be sorted.
  * </p>
  */
 public class __G50__AccountsMerge {

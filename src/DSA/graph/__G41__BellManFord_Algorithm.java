@@ -18,7 +18,7 @@ import java.util.Arrays;
  * <ul>
  *   <li>Initialize all distances as INF except source.</li>
  *   <li>Relax all edges V-1 times.</li>
- *   <li>Check for negative cycles by doing one more relaxation.</li>
+ *   <li>Check for negative cycles by doing __1__ more relaxation.</li>
  * </ul>
  *
  * <p><b>Time Complexity:</b> O(V * E)</p>

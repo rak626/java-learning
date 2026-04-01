@@ -20,7 +20,7 @@ package DSA.slidingwindow;
  * <ul>
  *   <li>Sliding Window:
  *     <ol>
- *       <li>Use two pointers <code>left</code> and <code>right</code> for the window.</li>
+ *       <li>Use __2__ pointers <code>left</code> and <code>right</code> for the window.</li>
  *       <li>Use a frequency array of size 26 to track counts of characters in the window.</li>
  *       <li>Maintain <code>maxFreq</code> = max frequency of any character in the window.</li>
  *       <li>If <code>(right - left + 1) - maxFreq &gt; k</code> → shrink window from <code>left</code>.</li>

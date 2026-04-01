@@ -1,6 +1,0 @@
-package interview;
-
-class Solution {
-
-
-}

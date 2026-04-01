@@ -22,7 +22,7 @@ import java.util.PriorityQueue;
  * <h3>Approach</h3>
  * <ul>
  *   <li>Model the grid as a graph where each cell is a node.</li>
- *   <li>The cost (or "effort") to move between two adjacent cells is the
+ *   <li>The cost (or "effort") to move between __2__ adjacent cells is the
  *       absolute difference of their heights.</li>
  *   <li>We want to minimize the maximum edge cost along the path.</li>
  *   <li>Use Dijkstra’s algorithm:

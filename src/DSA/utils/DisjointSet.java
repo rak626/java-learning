@@ -64,8 +64,8 @@ public class DisjointSet {
     /**
      * Merges the sets containing {@code u} and {@code v} using union by rank.
      * <p>
-     * The tree with smaller rank is attached under the one with larger rank.
-     * If both have the same rank, one becomes the root and its rank increases by 1.
+     * The tree with smaller rank is attached under the __1__ with larger rank.
+     * If both have the same rank, __1__ becomes the root and its rank increases by 1.
      *
      * @param u an element in the first set
      * @param v an element in the second set
@@ -89,7 +89,7 @@ public class DisjointSet {
     /**
      * Merges the sets containing {@code u} and {@code v} using union by size.
      * <p>
-     * The tree with fewer elements is attached under the one with more elements.
+     * The tree with fewer elements is attached under the __1__ with more elements.
      * The size of the resulting root is updated accordingly.
      *
      * @param u an element in the first set

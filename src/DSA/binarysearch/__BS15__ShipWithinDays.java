@@ -24,7 +24,7 @@ import java.util.Arrays;
  *   <li>Search space:
  *     <ul>
  *       <li><b>Low</b> = max(weights) (at least must fit heaviest package).</li>
- *       <li><b>High</b> = sum(weights) (one trip for all).</li>
+ *       <li><b>High</b> = sum(weights) (__1__ trip for all).</li>
  *     </ul>
  *   </li>
  *   <li>For each capacity = mid:

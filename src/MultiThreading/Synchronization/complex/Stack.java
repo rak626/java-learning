@@ -1,4 +1,4 @@
-package MultiThreading.Synchronization;
+package MultiThreading.Synchronization.complex;
 
 public class Stack {
     private final int[] array;

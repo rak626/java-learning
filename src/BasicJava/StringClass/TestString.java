@@ -10,7 +10,7 @@ public class TestString {
         String c = "ram"; // String literals
         String d = "ram";
 
-        // false, because we are comparing two different object location
+        // false, because we are comparing __2__ different object location
         System.out.println(a == b);
         // true, because in string literal, it uses string pool for storing the object,
         // if object value is same, then same object reference will be shared, no new object creation happens

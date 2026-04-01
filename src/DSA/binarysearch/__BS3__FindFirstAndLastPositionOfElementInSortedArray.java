@@ -36,14 +36,14 @@ package DSA.binarysearch;
  *   <li>Return both indices as <code>[first, last]</code>.</li>
  * </ol>
  *
- * <p><b>Why two searches?</b></p>
+ * <p><b>Why __2__ searches?</b></p>
  * <p>
  * Classic binary search finds any occurrence. To ensure extremities,
  * we continue shrinking the search space toward left/right after matching
  * the target.
  * </p>
  *
- * <p><b>Time Complexity:</b> O(log n) — two binary searches.</p>
+ * <p><b>Time Complexity:</b> O(log n) — __2__ binary searches.</p>
  * <p><b>Space Complexity:</b> O(1) — constant auxiliary space.</p>
  */
 public class __BS3__FindFirstAndLastPositionOfElementInSortedArray {
@@ -105,7 +105,7 @@ public class __BS3__FindFirstAndLastPositionOfElementInSortedArray {
 
     /**
      * Combined approach using a generalized binary search.
-     * Executes two passes by switching behavior with isFirst flag.
+     * Executes __2__ passes by switching behavior with isFirst flag.
      */
     public int[] searchRangeCombine(int[] nums, int target) {
         int first = find(true, nums, target);

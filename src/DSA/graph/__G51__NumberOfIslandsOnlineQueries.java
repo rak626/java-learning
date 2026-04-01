@@ -23,7 +23,7 @@ import java.util.List;
  *   <li>Check all 4 adjacent directions:</li>
  *       <ul>
  *           <li>If a neighbor is visited, union the current cell with the neighbor.</li>
- *           <li>If a union happens, decrement the island count (two islands merged).</li>
+ *           <li>If a union happens, decrement the island count (__2__ islands merged).</li>
  *       </ul>
  * </ul>
  * <li>Append the current island count to the answer list after processing each position.</li>
@@ -69,7 +69,7 @@ public class __G51__NumberOfIslandsOnlineQueries {
                     int neighbor = nr * m + nc;
                     if (ds.find(node) != ds.find(neighbor)) {
                         ds.unionBySize(node, neighbor);
-                        count--; // merged two islands
+                        count--; // merged __2__ islands
                     }
                 }
             }

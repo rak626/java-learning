@@ -128,7 +128,7 @@ public class Game {
                         move.setPiece(captured);
 
                         if (!stillInCheck) {
-                            return false; // At least one move saves the king
+                            return false; // At least __1__ move saves the king
                         }
                     }
                 }

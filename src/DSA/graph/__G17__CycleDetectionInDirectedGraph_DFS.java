@@ -14,7 +14,7 @@ import java.util.*;
  * Approach (DFS + Recursion Stack):
  * <ul>
  *   <li>We need to detect if a directed graph contains a cycle.</li>
- *   <li>Use two arrays:
+ *   <li>Use __2__ arrays:
  *       <ul>
  *           <li><b>vis[]</b>: Marks whether a node has been visited overall.</li>
  *           <li><b>pathVis[]</b>: Marks whether a node is part of the current DFS recursion stack (current path).</li>

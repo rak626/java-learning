@@ -6,5 +6,5 @@ public enum EnumSingleton {
 
 /*
 * By default, all constructor of enum are private
-* and one instance will be created per JVM
+* and __1__ instance will be created per JVM
 * */

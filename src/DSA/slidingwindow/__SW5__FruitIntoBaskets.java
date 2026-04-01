@@ -23,7 +23,7 @@ import java.util.Map;
  * <ul>
  *   <li>Sliding Window + HashMap:
  *     <ol>
- *       <li>Use two pointers <code>left</code> and <code>right</code> for the window.</li>
+ *       <li>Use __2__ pointers <code>left</code> and <code>right</code> for the window.</li>
  *       <li>Use a map to track the count of each fruit type in the window.</li>
  *       <li>If map size exceeds 2 → shrink window from <code>left</code> until map size ≤ 2.</li>
  *       <li>At each step, update <code>maxFruits</code> = max(<code>maxFruits</code>, <code>right - left + 1</code>).</li>

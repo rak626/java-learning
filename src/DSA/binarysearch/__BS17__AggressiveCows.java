@@ -14,7 +14,7 @@ import java.util.Arrays;
  * <p><b>Problem Summary:</b></p>
  * <p>
  * You are given positions of stalls (sorted or unsorted) and an integer <code>k</code> (number of cows).
- * Place the cows in the stalls such that the <b>minimum distance</b> between any two cows is maximized.
+ * Place the cows in the stalls such that the <b>minimum distance</b> between any __2__ cows is maximized.
  * Return this maximum possible minimum distance.
  * </p>
  *
@@ -72,7 +72,7 @@ public class __BS17__AggressiveCows {
 
     /**
      * Greedy check: can we place k cows such that
-     * min distance between any two is at least 'dist'?
+     * min distance between any __2__ is at least 'dist'?
      */
     private boolean canPlace(int[] stalls, int dist, int k) {
         int count = 1; // place first cow at first stall

@@ -95,7 +95,7 @@ public class __SQ12__LargestRectangleInHistogram {
      * </ul>
      * <p>
      * The extra i == n → height = 0 is a flush trick to empty stack.
-     *  using one pass, O(n)
+     *  using __1__ pass, O(n)
      */
     public int largestRectangleArea_Optimized(int[] heights) {
         int n = heights.length;

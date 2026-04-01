@@ -1,4 +1,4 @@
-package MultiThreading.Synchronization;
+package MultiThreading.Synchronization.complex;
 
 public class StackThreadRunner {
     public static void main(String[] args) {

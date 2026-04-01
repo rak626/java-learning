@@ -19,7 +19,7 @@ package DSA.slidingwindow;
  * <ul>
  *   <li>Use sliding window:
  *     <ol>
- *       <li>Maintain two pointers <code>left</code> and <code>right</code> representing the window.</li>
+ *       <li>Maintain __2__ pointers <code>left</code> and <code>right</code> representing the window.</li>
  *       <li>Keep a count of zeros in the current window (<code>zeroCount</code>).</li>
  *       <li>If <code>zeroCount &gt; k</code>, move <code>left</code> forward until <code>zeroCount ≤ k</code>.</li>
  *       <li>Update <code>maxLength</code> = max(<code>maxLength</code>, <code>right - left + 1</code>).</li>

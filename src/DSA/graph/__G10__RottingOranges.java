@@ -43,7 +43,7 @@ public class __G10__RottingOranges {
 
         int freshCnt = 0;
 
-        // calculate the fresh count & initialize each rotten one into the queue to start bfs
+        // calculate the fresh count & initialize each rotten __1__ into the queue to start bfs
 
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {

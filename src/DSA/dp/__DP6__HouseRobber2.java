@@ -101,19 +101,18 @@ public class __DP6__HouseRobber2 {
      * </p>
      */
     private int robLinearIterative(int[] nums, int start, int end) {
-        if (start > end) return 0;
-        int n = end - start + 1;
-        if (n == 1) return nums[start];
+        int[] dp = new int[nums.length];
+        dp[start] = nums[start]; // base case
 
-        int[] dp = new int[n];
-        dp[0] = nums[start];
-        dp[1] = Math.max(nums[start], nums[start + 1]);
-
-        for (int i = 2; i < n; i++) {
-            dp[i] = Math.max(nums[start + i] + dp[i - 2], dp[i - 1]);
+        for (int i = start + 1; i <= end; i++) {
+            int rob = nums[i];
+            if (i - 2 >= start) {
+                rob += dp[i - 2];
+            }
+            int skip = dp[i - 1];
+            dp[i] = Math.max(rob, skip);
         }
-
-        return dp[n - 1];
+        return dp[end];
     }
 
     /**
@@ -133,9 +132,10 @@ public class __DP6__HouseRobber2 {
         int prev1 = 0;
 
         for (int i = start; i <= end; i++) {
-            int current = Math.max(prev2 + nums[i], prev1);
+            int rob = nums[i] + prev2;
+            int skip = prev1;
             prev2 = prev1;
-            prev1 = current;
+            prev1 = Math.max(rob, skip);
         }
 
         return prev1;

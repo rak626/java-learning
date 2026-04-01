@@ -11,7 +11,7 @@ package DSA.binarysearch;
  *
  * <p><b>Problem Summary:</b></p>
  * <p>
- * Given two sorted arrays <code>nums1</code> and <code>nums2</code> and an integer <code>k</code>,
+ * Given __2__ sorted arrays <code>nums1</code> and <code>nums2</code> and an integer <code>k</code>,
  * return the k-th smallest element in the combined sorted array.
  * Do this in O(log(min(m, n))) time without merging the arrays.
  * </p>

@@ -11,18 +11,18 @@ import java.util.*;
  * </ul>
  * <p>
  * Description:
- * Given two words (beginWord and endWord) and a dictionary wordList,
+ * Given __2__ words (beginWord and endWord) and a dictionary wordList,
  * return the length of the shortest transformation sequence from beginWord
  * to endWord, where:
  * <ul>
- *   <li>Only one letter can be changed at a time.</li>
+ *   <li>Only __1__ letter can be changed at a time.</li>
  *   <li>Each transformed word must exist in the wordList.</li>
  * </ul>
  * If no such sequence exists, return 0.
  * <p>
  * Approach:
  * - Use BFS (level-order traversal) starting from beginWord.
- * - For each word, generate all possible one-character transformations.
+ * - For each word, generate all possible __1__-character transformations.
  * - If a transformed word exists in the dictionary, enqueue it and remove from the set (to avoid revisits).
  * - Stop when endWord is reached and return the step count.
  * - If BFS finishes without finding endWord, return 0.

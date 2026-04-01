@@ -18,7 +18,7 @@ package DSA.binarysearch;
  *
  * <h2>Approach / Intuition:</h2>
  * <ul>
- *   <li>Since the array is rotated, at least one half (left or right) of the current range will always be sorted.</li>
+ *   <li>Since the array is rotated, at least __1__ half (left or right) of the current range will always be sorted.</li>
  *   <li>Perform a modified binary search:
  *     <ol>
  *       <li>Find <code>mid</code>.</li>

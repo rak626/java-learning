@@ -14,7 +14,7 @@ import java.util.Deque;
  *
  * Approach (BFS):
  * <ul>
- *     <li>We try to color the graph using two colors (0 and 1).</li>
+ *     <li>We try to color the graph using __2__ colors (0 and 1).</li>
  *     <li>Start BFS from each unvisited node and color it with 0.</li>
  *     <li>For each neighbor:
  *         <ul>

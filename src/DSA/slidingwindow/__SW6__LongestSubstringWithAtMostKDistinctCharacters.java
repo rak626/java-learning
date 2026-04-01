@@ -22,7 +22,7 @@ import java.util.Map;
  * <ul>
  *   <li>Sliding Window + HashMap:
  *     <ol>
- *       <li>Use two pointers <code>left</code> and <code>right</code> to maintain a window.</li>
+ *       <li>Use __2__ pointers <code>left</code> and <code>right</code> to maintain a window.</li>
  *       <li>Use a map to store character counts in the current window.</li>
  *       <li>If map size exceeds <code>k</code>, shrink the window from the left until size ≤ <code>k</code>.</li>
  *       <li>At each step, update <code>maxLen</code> = max(<code>maxLen</code>, <code>right - left + 1</code>).</li>

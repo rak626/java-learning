@@ -20,8 +20,8 @@ import java.util.Comparator;
  *   <li>Initialize a Disjoint Set Union (DSU) structure to keep track of connected components.</li>
  *   <li>Iterate through edges in sorted order:
  *     <ul>
- *       <li>If the current edge connects two different components, include it in the MST.</li>
- *       <li>Merge the two components in DSU.</li>
+ *       <li>If the current edge connects __2__ different components, include it in the MST.</li>
+ *       <li>Merge the __2__ components in DSU.</li>
  *     </ul>
  *   </li>
  *   <li>Repeat until exactly {@code n-1} edges are added to the MST.</li>

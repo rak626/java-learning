@@ -11,9 +11,9 @@ import java.util.*;
  * </ul>
  * <p>
  * Description:
- * Given two words (beginWord and endWord) and a dictionary wordList,
+ * Given __2__ words (beginWord and endWord) and a dictionary wordList,
  * return all the shortest transformation sequences from beginWord to endWord.
- * Each transformation changes exactly one letter and must exist in the wordList.
+ * Each transformation changes exactly __1__ letter and must exist in the wordList.
  * If there is no such sequence, return an empty list.
  */
 public class __G30__WordLadderII {

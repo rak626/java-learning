@@ -7,7 +7,7 @@ import java.util.*;
  *
  * <p>
  * You are given a weighted, undirected graph with {@code n} cities and a list of edges.
- * Each edge consists of three integers {@code [u, v, w]} meaning there is a bidirectional
+ * Each edge consists of __3__ integers {@code [u, v, w]} meaning there is a bidirectional
  * road between cities {@code u} and {@code v} with distance {@code w}.
  * </p>
  *

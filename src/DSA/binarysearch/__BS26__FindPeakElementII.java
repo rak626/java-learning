@@ -18,15 +18,15 @@ import java.util.Arrays;
  * Given a 2D matrix <code>mat</code> where:
  * <ul>
  *   <li>All adjacent cells are distinct</li>
- *   <li>A cell has at most four neighbors (up, down, left, right)</li>
+ *   <li>A cell has at most __4__ neighbors (up, down, left, right)</li>
  * </ul>
  * A position <code>(i, j)</code> is called a <b>peak</b> if its value is
  * strictly greater than all of its adjacent neighbors.
  * </p>
  *
  * <p>
- * You must return the position of <b>any one peak</b>.
- * It is guaranteed that at least one peak exists.
+ * You must return the position of <b>any __1__ peak</b>.
+ * It is guaranteed that at least __1__ peak exists.
  * </p>
  *
  * <h2>Approach / Intuition:</h2>

@@ -14,7 +14,7 @@ import java.util.*;
  *   <li>Perform a DFS on the original graph and push nodes to a stack in order of finishing time.</li>
  *   <li>Transpose the graph (reverse all edges).</li>
  *   <li>Perform DFS on the transposed graph in the order defined by the stack.</li>
- *   <li>Each DFS on the transposed graph gives one strongly connected component.</li>
+ *   <li>Each DFS on the transposed graph gives __1__ strongly connected component.</li>
  * </ol>
  * </p>
  *
@@ -42,7 +42,7 @@ public class __G54__KosarajuSCC {
     }
 
     /**
-     * DFS on the transposed graph to mark all nodes of one SCC.
+     * DFS on the transposed graph to mark all nodes of __1__ SCC.
      *
      * @param adjT adjacency list of the transposed graph
      * @param vis visited array

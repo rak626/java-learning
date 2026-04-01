@@ -9,10 +9,10 @@ import DSA.utils.TreeNode;
  * Tags: tree
  * <p>
  /**
- * Finds the Lowest Common Ancestor (LCA) of two nodes in a Binary Search Tree (BST).
+ * Finds the Lowest Common Ancestor (LCA) of __2__ nodes in a Binary Search Tree (BST).
  *
  * <p><b>Problem:</b><br>
- * Given a BST and two nodes `p` and `q`, find their lowest common ancestor (LCA).
+ * Given a BST and __2__ nodes `p` and `q`, find their lowest common ancestor (LCA).
  * The LCA is the lowest node in the tree that has both `p` and `q` as descendants
  * (a node can be a descendant of itself).
  *

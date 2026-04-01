@@ -7,7 +7,7 @@ import java.util.Deque;
  * <h2>Expression Conversion Using Stack — Full Mental Model Guide</h2>
  *
  * <p>
- * Expressions can be represented in three main notations:
+ * Expressions can be represented in __3__ main notations:
  * </p>
  *
  * <ul>

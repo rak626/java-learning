@@ -32,7 +32,7 @@ public class PriorityQueueInterfaceDemo {
 //        System.out.println(spq);
 
         /*
-         * There is two-way to provide comparison properties
+         * There is __2__-way to provide comparison properties
          * 1. implementing comparable interface
          * 2. passing new instance of Comparator class in pq declaration;
          * */

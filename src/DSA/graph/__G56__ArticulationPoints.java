@@ -25,7 +25,7 @@ import java.util.*;
  *           <li>If low[neighbor] >= tin[node], the current node is an articulation point.</li>
  *       </ul>
  *   </li>
- *   <li>Special case: If the root of DFS has more than one child, it is also an articulation point.</li>
+ *   <li>Special case: If the root of DFS has more than __1__ child, it is also an articulation point.</li>
  * </ol>
  * </p>
  *

@@ -23,8 +23,8 @@ import java.util.Arrays;
  *   <li>This is a "partition + minimize max load" problem → solved with <b>Binary Search on Answer</b>.</li>
  *   <li>Search space:
  *     <ul>
- *       <li><b>Low</b> = max(nums) → at least one subarray must hold the largest element.</li>
- *       <li><b>High</b> = sum(nums) → one subarray takes the entire array.</li>
+ *       <li><b>Low</b> = max(nums) → at least __1__ subarray must hold the largest element.</li>
+ *       <li><b>High</b> = sum(nums) → __1__ subarray takes the entire array.</li>
  *     </ul>
  *   </li>
  *   <li>Feasibility check (<code>mid</code> = candidate max sum):

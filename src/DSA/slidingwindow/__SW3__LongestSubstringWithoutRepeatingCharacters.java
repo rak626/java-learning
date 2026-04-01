@@ -21,7 +21,7 @@ import java.util.Arrays;
  *   <li>Use Sliding Window + Hashing:
  *     <ol>
  *       <li>Maintain an array <code>lastSeen[256]</code> to store last seen index of each ASCII character.</li>
- *       <li>Use two pointers: <code>start</code> (window start) and <code>end</code> (window end).</li>
+ *       <li>Use __2__ pointers: <code>start</code> (window start) and <code>end</code> (window end).</li>
  *       <li>If current character has been seen inside the window → move <code>start</code> to <code>lastSeen[currentChar] + 1</code>.</li>
  *       <li>Update <code>lastSeen[currentChar]</code> = <code>end</code>.</li>
  *       <li>Update <code>maxLength</code> = max(<code>maxLength</code>, <code>end - start + 1</code>).</li>

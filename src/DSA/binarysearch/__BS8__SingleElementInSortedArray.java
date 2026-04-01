@@ -12,7 +12,7 @@ package DSA.binarysearch;
  * <p><b>Problem Summary:</b></p>
  * <p>
  * You are given a sorted array where every element appears exactly twice,
- * except for one element which appears only once.
+ * except for __1__ element which appears only once.
  * Find and return that single element in O(log n) time.
  * </p>
  *

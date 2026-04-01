@@ -22,7 +22,7 @@ package DSA.slidingwindow;
  *       <li>Start by taking the first <code>k</code> elements as initial sum (all from the left).</li>
  *       <li>Then, iteratively move cards from left to right:
  *         <ul>
- *           <li>Remove one from the left and add one from the right end.</li>
+ *           <li>Remove __1__ from the left and add __1__ from the right end.</li>
  *           <li>Update <code>maxSum</code> at each step.</li>
  *         </ul>
  *       </li>

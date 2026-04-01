@@ -25,7 +25,7 @@ package DSA.binarysearch;
  *
  * <p><b>Approach:</b></p>
  * <ol>
- *   <li>Initialize two pointers: <code>l = 0</code>, <code>h = nums.length - 1</code>.</li>
+ *   <li>Initialize __2__ pointers: <code>l = 0</code>, <code>h = nums.length - 1</code>.</li>
  *   <li>Loop while <code>l <= h</code>:</li>
  *   <ul>
  *       <li>Compute <code>mid = l + (h - l) / 2</code> (overflow-safe form).</li>

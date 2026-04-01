@@ -16,13 +16,13 @@ package DSA.linkedlist;
  */
 public class __LL10__SortList {
     public ListNode sortList(ListNode head) {
-        // base condition, either empty list or one node
+        // base condition, either empty list or __1__ node
         if (head == null || head.next == null) return head;
 
-        // split the ll into two halves
+        // split the ll into __2__ halves
         ListNode mid = getMid(head);
         ListNode right = mid.next;
-        mid.next = null; // cut the link , make ll into two half
+        mid.next = null; // cut the link , make ll into __2__ half
 
         // sort both half
         ListNode left = sortList(head);

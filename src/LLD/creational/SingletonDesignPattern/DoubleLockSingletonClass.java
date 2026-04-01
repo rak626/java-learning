@@ -28,7 +28,7 @@ public class DoubleLockSingletonClass {
 /*
  * Disadvantages :-
  * if we observed in production scenario,
- * let assume two thread want to create this object at same time,
+ * let assume __2__ thread want to create this object at same time,
  * and both thread is running in different core of the cpu,
  * when they are checking object == null condition,
  * generally every core check their own L1 cache,

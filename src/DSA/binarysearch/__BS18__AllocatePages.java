@@ -17,7 +17,7 @@ import java.util.Arrays;
  * Assign books to students such that:
  * <ul>
  *   <li>Each student gets a contiguous block of books.</li>
- *   <li>Each book is assigned to exactly one student.</li>
+ *   <li>Each book is assigned to exactly __1__ student.</li>
  * </ul>
  * Minimize the maximum number of pages assigned to any student.
  * Return this minimum possible maximum.
@@ -28,8 +28,8 @@ import java.util.Arrays;
  *   <li>This is a partition problem → solved with <b>Binary Search on Answer</b>.</li>
  *   <li>Search space:
  *     <ul>
- *       <li><b>Low</b> = max(arr) → at least one student must take the largest book.</li>
- *       <li><b>High</b> = sum(arr) → one student takes all books.</li>
+ *       <li><b>Low</b> = max(arr) → at least __1__ student must take the largest book.</li>
+ *       <li><b>High</b> = sum(arr) → __1__ student takes all books.</li>
  *     </ul>
  *   </li>
  *   <li>Check feasibility (mid = candidate max load):
