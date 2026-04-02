@@ -1,4 +1,4 @@
-package MultiThreading.BasicThreads;
+package MultiThreading._01_BasicThreads;
 
 public class Thread1 extends Thread {
 

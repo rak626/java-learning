@@ -1,4 +1,4 @@
-package MultiThreading.Synchronization.simple;
+package MultiThreading._02_Synchronization.simple;
 
 public class Test {
     public static void main(String[] args) {
