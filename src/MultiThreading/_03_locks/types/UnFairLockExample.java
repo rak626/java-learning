@@ -36,5 +36,12 @@ public class UnFairLockExample {
           Without Fairness thread can be starved
           With fairness thread will not be starved
          */
+
+        /*
+          | Type                   | Behavior                                |
+          | ---------------------- | --------------------------------------- |
+          | Non-Fair (default)     | Threads can “barge” → higher throughput|
+          | Fair Lock              | FIFO order → avoids starvation         |
+         */
     }
 }
